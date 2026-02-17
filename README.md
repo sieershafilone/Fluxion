@@ -1,11 +1,11 @@
-# FLUXION // VULNERABILITY_MANIFOLD_SIMULATOR
+# FLUXION 
 **VERSION**: 2.1.0-STABLE  
 **CODENAME**: NEURAL_FLUX  
 
-## // Overview
+## Overview
 FLUXION is a high-performance C2 (Command & Control) environment built for the simulation and exploitation of **non-linear stochastic cascades** in global network manifolds. It moves beyond static risk analysis by treating systemic fragility as a dynamic **Network Contagion** problem.
 
-## // Mathematical Core: FLUXION Engine
+## Mathematical Core: FLUXION Engine
 The engine models systemic risk as a weighted contagion vector. The global manifold is represented as an adjacency map where each node $n$ maintains a state $S_n \in \{STABLE, STRESSED, COLLAPSED\}$.
 
 ### 1. Stress Propagation ($\sigma$)
@@ -22,7 +22,7 @@ Where $\phi$ (phi) is the node's intrinsic **Resilience** and $k$ is the collaps
 
 ---
 
-## // Offensive Modulation: AILERON Layer
+## Offensive Modulation: AILERON Layer
 The AILERON layer is designed for threshold exploitation and signal masking.
 
 - **Pulse Optimization**: Calculates the exact minimal stress injection required to cross the sigmoid inflection point of a target node given its current neighbor flux.
@@ -30,14 +30,14 @@ The AILERON layer is designed for threshold exploitation and signal masking.
 
 ---
 
-## // Engineering Stack
+## Engineering Stack
 Built with an emphasis on low-latency state updates and hardware-accelerated visualization:
 - **Engine**: Pure TypeScript O(V+E) graph propagation core (independent of UI).
 - **Presentation**: `React-Three-Fiber` + `Three.js` for manifold rendering.
 - **State**: Custom hook-based middleware with real-time signal ingestion from the **INTEL** sub-engine.
 - **Design**: "Industrial HUD" aesthetic using glassmorphism, scan-line artifacts, and precision micro-animations.
 
-## // Operational Setup
+## Operational Setup
 ```bash
 # Clone and initialize
 npm install
