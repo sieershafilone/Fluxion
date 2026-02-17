@@ -1,11 +1,11 @@
-# CASCADE-APEX // VULNERABILITY_MANIFOLD_SIMULATOR
+# FLUXION // VULNERABILITY_MANIFOLD_SIMULATOR
 **VERSION**: 2.1.0-STABLE  
 **CODENAME**: NEURAL_FLUX  
 
 ## // Overview
-CASCADE-APEX is a high-performance C2 (Command & Control) environment built for the simulation and exploitation of **non-linear stochastic cascades** in global network manifolds. It moves beyond static risk analysis by treating systemic fragility as a dynamic **Network Contagion** problem.
+FLUXION is a high-performance C2 (Command & Control) environment built for the simulation and exploitation of **non-linear stochastic cascades** in global network manifolds. It moves beyond static risk analysis by treating systemic fragility as a dynamic **Network Contagion** problem.
 
-## // Mathematical Core: CASCADE Engine
+## // Mathematical Core: FLUXION Engine
 The engine models systemic risk as a weighted contagion vector. The global manifold is represented as an adjacency map where each node $n$ maintains a state $S_n \in \{STABLE, STRESSED, COLLAPSED\}$.
 
 ### 1. Stress Propagation ($\sigma$)
@@ -22,8 +22,8 @@ Where $\phi$ (phi) is the node's intrinsic **Resilience** and $k$ is the collaps
 
 ---
 
-## // Offensive Modulation: APEX Layer
-The APEX layer is designed for threshold exploitation and signal masking.
+## // Offensive Modulation: AILERON Layer
+The AILERON layer is designed for threshold exploitation and signal masking.
 
 - **Pulse Optimization**: Calculates the exact minimal stress injection required to cross the sigmoid inflection point of a target node given its current neighbor flux.
 - **Deception Field**: Implements non-linear signal compression to mask true internal $\sigma$ levels from external monitoring AIs, represented visually as the "Stealth Masking" status.
@@ -47,4 +47,4 @@ npm run dev
 ```
 
 ---
-*INTERNAL USE ONLY: Unauthorized reproduction of the CASCADE core logic is strictly prohibited.*
+*INTERNAL USE ONLY: Unauthorized reproduction of the FLUXION core logic is strictly prohibited.*

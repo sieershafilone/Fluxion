@@ -1,5 +1,5 @@
 /**
- * PROPRIETARY AND CONFIDENTIAL: CASCADE-APEX CORE
+ * PROPRIETARY AND CONFIDENTIAL: FLUXION CORE
  * VERSION: 2.1.0-STABLE
  * PRE-PRODUCTION RELEASE
  */
@@ -40,7 +40,7 @@ const _clamp = (x: number, min = 0, max = 1) => Math.max(min, Math.min(max, x));
 const _sigmoid = (x: number) => 1 / (1 + Math.exp(-x));
 
 /**
- * CASCADE CORE: Stochastic Contagion Logic
+ * FLUXION CORE: Stochastic Contagion Logic
  */
 export class CascadeEngine {
   private adj: AdjacencyMap;
@@ -103,7 +103,7 @@ export class CascadeEngine {
 }
 
 /**
- * APEX LAYER: Threshold exploitation & signal masking
+ * AILERON LAYER: Threshold exploitation & signal masking
  */
 export class ApexEngine {
   static optimizePulse(

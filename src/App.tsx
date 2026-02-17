@@ -32,7 +32,7 @@ function App() {
   });
 
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
-  const [logs, setLogs] = useState<string[]>(['[SYS_READY] APEX_KERNEL LOADED. VERSION 2.1.0-STABLE.']);
+  const [logs, setLogs] = useState<string[]>(['[SYS_READY] FLUXION_KERNEL LOADED. VERSION 2.1.0-STABLE.']);
   const [news, setNews] = useState<NewsEvent[]>([]);
   const [isBooting, setIsBooting] = useState(true);
 
@@ -71,7 +71,7 @@ function App() {
 
   const onPropagate = () => {
     setState(prev => CascadeEngine.calculateContagion(prev));
-    log('CASCADE_SIGNAL: BROADCASTING CONTAGION VECTOR.');
+    log('FLUX_SIGNAL: BROADCASTING CONTAGION VECTOR.');
   };
 
   const onPulse = (id: string) => {
@@ -80,7 +80,7 @@ function App() {
         if (u.id === id) {
           const pulse = ApexEngine.optimizePulse(u);
           const s_upd = Math.min(1, u.stress + pulse);
-          log(`APEX_CORE: TARGETING ${id}. PULSE_INTENSITY: ${pulse.toFixed(4)}`);
+          log(`FLUX_CORE: TARGETING ${id}. PULSE_INTENSITY: ${pulse.toFixed(4)}`);
           return {
             ...u,
             stress: s_upd,
@@ -109,7 +109,7 @@ function App() {
               transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
               style={{ width: 40, height: 40, border: '2px solid var(--brand-brahmastra)', borderTopColor: 'transparent', borderRadius: '50%' }}
             />
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--brand-brahmastra)', letterSpacing: '0.3em' }}>APEX_OS v2.1.0 BOOTING...</div>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--brand-brahmastra)', letterSpacing: '0.3em' }}>FLUXION_OS v2.1.0 BOOTING...</div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -118,8 +118,7 @@ function App() {
 
         <aside className="glass" style={{ margin: '1rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem', overflowY: 'hidden' }}>
           <header style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '1rem' }}>
-            <Activity size={20} color="var(--brand-yugma)" />
-            <h2 style={{ fontSize: '1rem', fontWeight: 900, color: 'var(--brand-yugma)', letterSpacing: '0.15em' }}>CASCADE_CORE</h2>
+            <h2 style={{ fontSize: '1rem', fontWeight: 900, color: 'var(--brand-yugma)', letterSpacing: '0.15em' }}>FLUXION_CORE</h2>
           </header>
 
           <section style={{ flex: '0 0 300px', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -194,7 +193,7 @@ function App() {
               ))}
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', opacity: 0.6 }}>
                 <TerminalIcon size={12} />
-                <span style={{ fontSize: '0.6rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.2em' }}>APEX_SHELL v2.1</span>
+                <span style={{ fontSize: '0.6rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.2em' }}>FLUX_SHELL v2.1</span>
               </div>
             </div>
           </div>
@@ -202,8 +201,7 @@ function App() {
 
         <aside className="glass" style={{ margin: '1rem', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.5rem', overflowY: 'auto' }}>
           <header style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '1rem' }}>
-            <Target size={20} color="var(--brand-brahmastra)" />
-            <h2 style={{ fontSize: '1rem', fontWeight: 900, color: 'var(--brand-brahmastra)', letterSpacing: '0.15em' }}>APEX_TACTICAL</h2>
+            <h2 style={{ fontSize: '1rem', fontWeight: 900, color: 'var(--brand-brahmastra)', letterSpacing: '0.15em' }}>AILERON_TACTICAL</h2>
           </header>
 
           <AnimatePresence mode="wait">
